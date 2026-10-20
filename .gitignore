@@ -1,0 +1,13 @@
+/bin/
+/dist/
+.firecrawl/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+.env
+.env.*
+.DS_Store
+__pycache__/
