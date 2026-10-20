@@ -89,7 +89,13 @@ Ensure `~/.local/bin` is in your shell's PATH. `wa --help` lists every command a
 
 ## Agent skill
 
-The reusable agent instructions are in [skills/whatsapp-local/SKILL.md](skills/whatsapp-local/SKILL.md). Install them under `~/.agents/skills`:
+The reusable agent instructions are in [skills/whatsapp-local/SKILL.md](skills/whatsapp-local/SKILL.md). Install the `wa` CLI first using the instructions above, then install the skill:
+
+```sh
+bunx skills add KorigamiK/whatsapp-cli --skill whatsapp-local
+```
+
+This installs the agent instructions; it does not install the `wa` CLI or grant macOS permissions. Alternatively, from a source checkout, copy the skill under `~/.agents/skills`:
 
 ```sh
 mkdir -p "$HOME/.agents/skills/whatsapp-local"
